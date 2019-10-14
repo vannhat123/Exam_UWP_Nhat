@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Exam_UWP_Nhat.Pages.SaveFile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exam_UWP_Nhat.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+        <TextBox x:Name="inputtext" AcceptsReturn="True" TextWrapping="Wrap"
+         MaxHeight="172" Width="300" Header="Description"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Button Click="Button_Click_SaveFile">Save File</Button>
+        <Button Click="Button_Click_ViewNameFile" Margin="0 10 0 0">ViewNameFile</Button>
+        <TextBlock x:Name="namefile" Margin="0 10 0 0"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
